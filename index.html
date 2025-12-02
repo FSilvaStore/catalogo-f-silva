@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F Silva STORE - Catálogo Exclusivo</title>
+    
+    <style>
+        /* --- ESTILO PREMIUM (PRETO E DOURADO) --- */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Fundo Preto */
+            color: #f0f0f0;
+        }
+
+        header {
+            background-color: #000000;
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom: 2px solid #d4af37; /* Linha Dourada */
+        }
+        
+        .logo {
+            max-width: 180px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .hero {
+            background: linear-gradient(to bottom, #000000, #1a1a1a);
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 2em;
+            text-transform: uppercase;
+            color: #d4af37;
+            letter-spacing: 3px;
+        }
+
+        .hero p {
+            font-size: 1.1em;
+            color: #cccccc;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .products-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .product-card {
+            background: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            opacity: 0.9;
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-name {
+            font-size: 1.3em;
+            margin: 10px 0;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .product-description {
+            color: #aaaaaa;
+            font-size: 0.9em;
+        }
+
+        .product-price {
+            color: #d4af37;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        /* Botão WhatsApp */
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 12px 0;
+            background: linear-gradient(45deg, #b8860b, #ffd700, #b8860b);
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: opacity 0.3s;
+        }
+        
+        .cta-button:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            background-color: #000;
+            border-top: 1px solid #333;
+            color: #666;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="F Silva STORE Logo" class="logo">
+    </header>
+
+    <section class="hero">
+        <h1>Coleção Exclusiva</h1>
+        <p>Toque na peça desejada para comprar via WhatsApp.</p>
+    </section>
+
+    <div class="container">
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x250/333333/d4af37?text=Produto+Premium" alt="Produto 1" class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Relógio Gold</div>
+                    <p class="product-description">Acabamento refinado.</p>
+                    <div class="product-price">R$ 299,90</div>
+                    <a href="https://api.whatsapp.com/send?phone=5511954286459&text=Olá,%20vi%20o%20Relógio%20Gold%20no%20site%20e%20tenho%20interesse." class="cta-button" target="_blank">Comprar Agora</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x250/333333/d4af37?text=Estilo+Luxo" alt="Produto 2" class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Óculos Solar</div>
+                    <p class="product-description">Proteção e elegância.</p>
+                    <div class="product-price">R$ 149,90</div>
+                    <a href="https://api.whatsapp.com/send?phone=5511954286459&text=Olá,%20vi%20o%20Óculos%20Solar%20no%20site%20e%20tenho%20interesse." class="cta-button" target="_blank">Comprar Agora</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x250/333333/d4af37?text=Kit+F+Silva" alt="Produto 3" class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Carteira de Couro</div>
+                    <p class="product-description">Couro legítimo.</p>
+                    <div class="product-price">R$ 89,90</div>
+                    <a href="https://api.whatsapp.com/send?phone=5511954286459&text=Olá,%20vi%20a%20Carteira%20de%20Couro%20no%20site%20e%20tenho%20interesse." class="cta-button" target="_blank">Comprar Agora</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 F Silva STORE - Excelência em cada detalhe.</p>
+    </footer>
+
+</body>
+</html>
